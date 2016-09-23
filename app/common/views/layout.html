@@ -23,6 +23,37 @@
 <body ng-app="<%= yield.moduleName %>">
 
 <%= yield.view %>
+<div class="padding">
+
+  <super-navbar>
+    <super-navbar-title>
+    Frood
+    </super-navbar-title>
+  </super-navbar>
+
+  <accordion close-others="false">
+      <accordion-group>
+          <accordion-heading>
+              <div class="row">
+                  <a class = "froodBox">
+                      <div class="col-md-4">
+                          GEECS BBQ
+                      </div>
+                      <div class="col-md-4">
+                          Tech LR2
+                      </div>
+                      <div class="col-md-4">
+                        7:30 PM
+                      </div>
+                  </a>
+              </div>
+          </accordion-heading>
+          <div class="col-xs-12">
+            Come out to the GEECS BBQ for some great food and have a rip roaring time with us.
+          </div>
+      </accordion-group>
+  </accordion>
+</div>
 
 </body>
 </html>
